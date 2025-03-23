@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-using Microsoft.EntityFrameworkCore;
 
-namespace SimpleHotelManagement.Model.Context
+namespace ProgramHotel.Context
 {
     public class DbContext : IDisposable
     {
@@ -32,6 +30,8 @@ namespace SimpleHotelManagement.Model.Context
                 return _connection;
             }
         }
+
+
         public void Dispose()
         {
             if (_connection != null)
@@ -44,6 +44,5 @@ namespace SimpleHotelManagement.Model.Context
                 _connection = null;
             }
         }
-
     }
 }

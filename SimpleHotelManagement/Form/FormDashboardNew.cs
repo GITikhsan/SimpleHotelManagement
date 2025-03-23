@@ -8,17 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SimpleHotelManagement.View
+namespace SimpleHotelManagement
 {
-    public partial class FormDashboard : Form
+    public partial class FormDashboardNew : Form
     {
-        public string Username;
-        public FormDashboard()
+        public FormDashboardNew()
         {
             InitializeComponent();
         }
 
-        private void FormDashboard_Load(object sender, EventArgs e)
+        private void FormDashboardNew_Load(object sender, EventArgs e)
         {
 
         }

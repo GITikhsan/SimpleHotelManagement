@@ -1,6 +1,6 @@
-﻿namespace SimpleHotelManagement.View
+﻿namespace SimpleHotelManagement
 {
-    partial class FormDashboard
+    partial class FormDashboardNew
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // FormDashboard
+            // FormDashboardNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "FormDashboard";
-            this.Text = "FormDashboard";
-            this.Load += new System.EventHandler(this.FormDashboard_Load);
+            this.Name = "FormDashboardNew";
+            this.Text = "FormDashboardNew";
+            this.Load += new System.EventHandler(this.FormDashboardNew_Load);
             this.ResumeLayout(false);
 
         }

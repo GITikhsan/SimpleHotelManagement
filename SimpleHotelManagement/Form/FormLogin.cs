@@ -1,6 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using SimpleHotelManagement.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using MySql.Data.MySqlClient;
+
 
 namespace SimpleHotelManagement
 {
@@ -85,9 +83,9 @@ namespace SimpleHotelManagement
                         {
                             MessageBox.Show("Login successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            FormDashboard dashboard = new FormDashboard();
-                            dashboard.Username = username;
-                            dashboard.Show();
+                           FormDashboardNew dashboardNew = new FormDashboardNew();
+                           //dashboardNew.Username = username;
+                           dashboardNew.Show();
                             this.Hide();
                         }
                         else
@@ -101,6 +99,65 @@ namespace SimpleHotelManagement
             {
                 MessageBox.Show($"There is an error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void pictureBoxMinimize_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBoxMinimize, "Minimize");
+        }
+
+        private void pictureBoxClose_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBoxClose, "Close");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBoxShow_Click(object sender, EventArgs e)
+        {
+            pictureBoxShow.Hide();
+            textBoxPassword.UseSystemPasswordChar = false;
+            pictureBoxHide.Show();
+        }
+
+        private void pictureBoxHide_Click(object sender, EventArgs e)
+        {
+            pictureBoxHide.Hide();
+            textBoxPassword.UseSystemPasswordChar = true;
+            pictureBoxShow.Show();
+        }
+
+        private void pictureBoxShow_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBoxShow, "Show password");
+        }
+
+        private void pictureBoxHide_MouseHover(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(pictureBoxHide, "Hide password");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
