@@ -12,9 +12,15 @@ namespace SimpleHotelManagement.View
 {
     public partial class FormDashboard : Form
     {
+        public string Username;
         public FormDashboard()
         {
             InitializeComponent();
+        }
+
+        private void FormDashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

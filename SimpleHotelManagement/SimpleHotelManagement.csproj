@@ -221,7 +221,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,9 +246,29 @@
   <ItemGroup>
     <Folder Include="Controller\" />
     <Folder Include="Icons\" />
-    <Folder Include="Images\" />
     <Folder Include="Model\Entity\" />
     <Folder Include="Model\Repository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Batik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\woman.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
