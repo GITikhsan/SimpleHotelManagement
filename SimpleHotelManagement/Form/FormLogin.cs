@@ -84,7 +84,7 @@ namespace SimpleHotelManagement
                             MessageBox.Show("Login successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                            FormDashboardNew dashboardNew = new FormDashboardNew();
-                           //dashboardNew.Username = username;
+                           dashboardNew.Username = username;
                            dashboardNew.Show();
                             this.Hide();
                         }
