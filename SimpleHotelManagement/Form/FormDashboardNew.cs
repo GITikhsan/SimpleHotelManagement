@@ -56,21 +56,31 @@ namespace SimpleHotelManagement
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             MovedPanel(buttonDashboard);
-
+            userControlSetting1.Hide();
+            userControlGuest1.Hide();
         }
         private void buttonGuests_Click(object sender, EventArgs e)
         {
             MovedPanel(buttonGuests);
+            userControlSetting1.Hide();
+            userControlGuest1.Clear();
+            userControlGuest1.Show();
+            
+
         }
         private void buttonRoom_Click(object sender, EventArgs e)
         {
             MovedPanel(buttonRoom);
+            userControlSetting1.Hide();
+            userControlGuest1.Hide();
 
         }
 
         private void buttonBooking_Click(object sender, EventArgs e)
         {
             MovedPanel(buttonBooking);
+            userControlSetting1.Hide();
+            userControlGuest1.Hide();
         }
 
         private void buttonSettings_Click(object sender, EventArgs e)
@@ -78,7 +88,8 @@ namespace SimpleHotelManagement
             MovedPanel(buttonSettings);
             userControlSetting1.Clear();
             userControlSetting1.Show();
-          
+            userControlGuest1.Hide();
+
         }
         private void labelDateTime_Click(object sender, EventArgs e)
         {

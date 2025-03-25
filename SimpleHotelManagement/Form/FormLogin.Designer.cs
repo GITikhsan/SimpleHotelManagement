@@ -79,6 +79,7 @@
             // 
             this.labelForgot.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelForgot.AutoSize = true;
+            this.labelForgot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelForgot.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelForgot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.labelForgot.Location = new System.Drawing.Point(242, 275);

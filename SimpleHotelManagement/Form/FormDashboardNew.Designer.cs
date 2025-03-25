@@ -49,8 +49,9 @@
             this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlSetting1 = new SimpleHotelManagement.View.UserControlSetting();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlGuest1 = new SimpleHotelManagement.View.UserControlGuest();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -308,16 +309,13 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.userControlGuest1);
             this.panel6.Controls.Add(this.userControlSetting1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(284, 205);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1082, 424);
             this.panel6.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // userControlSetting1
             // 
@@ -331,6 +329,21 @@
             this.userControlSetting1.TabIndex = 0;
             this.userControlSetting1.Visible = false;
             this.userControlSetting1.Load += new System.EventHandler(this.userControlSetting1_Load);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // userControlGuest1
+            // 
+            this.userControlGuest1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlGuest1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlGuest1.Location = new System.Drawing.Point(0, 0);
+            this.userControlGuest1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlGuest1.Name = "userControlGuest1";
+            this.userControlGuest1.Size = new System.Drawing.Size(1082, 424);
+            this.userControlGuest1.TabIndex = 0;
+            this.userControlGuest1.Visible = false;
             // 
             // FormDashboardNew
             // 
@@ -390,5 +403,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private View.UserControlSetting userControlSetting1;
+        private View.UserControlGuest userControlGuest1;
     }
 }
