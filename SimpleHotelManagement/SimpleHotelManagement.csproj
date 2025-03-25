@@ -201,19 +201,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FormDashboardNew.cs">
+    <Compile Include="Form View\FormDashboardNew.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormDashboardNew.Designer.cs">
+    <Compile Include="Form View\FormDashboardNew.Designer.cs">
       <DependentUpon>FormDashboardNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Context\DbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Form\FormLogin.cs">
+    <Compile Include="Form View\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FormLogin.Designer.cs">
+    <Compile Include="Form View\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UserControlGuest.cs">
@@ -222,13 +222,19 @@
     <Compile Include="View\UserControlGuest.Designer.cs">
       <DependentUpon>UserControlGuest.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UserControlRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControlRoom.Designer.cs">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserControlSetting.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="View\UserControlSetting.Designer.cs">
       <DependentUpon>UserControlSetting.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form\FormDashboardNew.resx">
+    <EmbeddedResource Include="Form View\FormDashboardNew.resx">
       <DependentUpon>FormDashboardNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -241,11 +247,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Form\FormLogin.resx">
+    <EmbeddedResource Include="Form View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControlGuest.resx">
       <DependentUpon>UserControlGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControlRoom.resx">
+      <DependentUpon>UserControlRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControlSetting.resx">
       <DependentUpon>UserControlSetting.cs</DependentUpon>
@@ -298,10 +307,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets'))" />
   </Target>
-  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
   <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.1.1.0\build\net46\Microsoft.Data.SqlClient.SNI.targets')" />
 </Project>

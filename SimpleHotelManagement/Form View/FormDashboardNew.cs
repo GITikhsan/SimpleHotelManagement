@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using SimpleHotelManagement.View;
 
 namespace SimpleHotelManagement
 {
@@ -58,6 +59,7 @@ namespace SimpleHotelManagement
             MovedPanel(buttonDashboard);
             userControlSetting1.Hide();
             userControlGuest1.Hide();
+            userControlRoom1.Hide();
         }
         private void buttonGuests_Click(object sender, EventArgs e)
         {
@@ -65,7 +67,8 @@ namespace SimpleHotelManagement
             userControlSetting1.Hide();
             userControlGuest1.Clear();
             userControlGuest1.Show();
-            
+            userControlRoom1.Hide();
+
 
         }
         private void buttonRoom_Click(object sender, EventArgs e)
@@ -73,6 +76,8 @@ namespace SimpleHotelManagement
             MovedPanel(buttonRoom);
             userControlSetting1.Hide();
             userControlGuest1.Hide();
+            userControlRoom1.clear();
+            userControlRoom1.Show();
 
         }
 
@@ -81,6 +86,7 @@ namespace SimpleHotelManagement
             MovedPanel(buttonBooking);
             userControlSetting1.Hide();
             userControlGuest1.Hide();
+            userControlRoom1.Hide();
         }
 
         private void buttonSettings_Click(object sender, EventArgs e)
@@ -89,7 +95,7 @@ namespace SimpleHotelManagement
             userControlSetting1.Clear();
             userControlSetting1.Show();
             userControlGuest1.Hide();
-
+            userControlRoom1.Hide();
         }
         private void labelDateTime_Click(object sender, EventArgs e)
         {

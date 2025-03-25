@@ -235,5 +235,10 @@ namespace SimpleHotelManagement.View
         {
 
         }
+
+        private void UserControlGuest_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

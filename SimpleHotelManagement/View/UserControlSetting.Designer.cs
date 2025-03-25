@@ -30,6 +30,9 @@
         {
             this.tabControlUser = new System.Windows.Forms.TabControl();
             this.tabPageAddUser = new System.Windows.Forms.TabPage();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -38,9 +41,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageSearchUser = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSearchUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,15 +52,15 @@
             this.textBoxDeleteUser = new System.Windows.Forms.TextBox();
             this.textBoxUpdateUser = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlUser.SuspendLayout();
             this.tabPageAddUser.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.tabPageSearchUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPageUpdateDelete.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlUser
@@ -90,10 +90,40 @@
             this.tabPageAddUser.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageAddUser.Size = new System.Drawing.Size(1057, 378);
             this.tabPageAddUser.TabIndex = 0;
-            this.tabPageAddUser.Text = "Add User";
+            this.tabPageAddUser.Text = "Add a user";
             this.tabPageAddUser.UseVisualStyleBackColor = true;
             this.tabPageAddUser.Click += new System.EventHandler(this.tabPageAddUser_Click);
             this.tabPageAddUser.Leave += new System.EventHandler(this.tabPageAddUser_Leave);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(299, 74);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(8, 8);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 30);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(0, 0);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(0, 0);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -152,9 +182,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
             this.label1.Location = new System.Drawing.Point(26, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 22);
+            this.label1.Size = new System.Drawing.Size(106, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add User";
+            this.label1.Text = "Add a user";
             // 
             // tabPageSearchUser
             // 
@@ -167,7 +197,7 @@
             this.tabPageSearchUser.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageSearchUser.Size = new System.Drawing.Size(1057, 378);
             this.tabPageSearchUser.TabIndex = 1;
-            this.tabPageSearchUser.Text = "Search User";
+            this.tabPageSearchUser.Text = "Search for user";
             this.tabPageSearchUser.UseVisualStyleBackColor = true;
             this.tabPageSearchUser.Enter += new System.EventHandler(this.tabPageSearchUser_Enter);
             this.tabPageSearchUser.Leave += new System.EventHandler(this.tabPageSearchUser_Leave);
@@ -189,39 +219,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(984, 236);
             this.dataGridView1.TabIndex = 7;
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "employee_id ";
-            this.Column1.HeaderText = "employee_id ";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 310;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "username";
-            this.Column2.HeaderText = "username";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 310;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "password";
-            this.Column3.HeaderText = "password";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 310;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
-            this.label5.Location = new System.Drawing.Point(159, 35);
+            this.label5.Location = new System.Drawing.Point(159, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 19);
             this.label5.TabIndex = 6;
@@ -241,9 +244,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
             this.label4.Location = new System.Drawing.Point(32, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 22);
+            this.label4.Size = new System.Drawing.Size(142, 22);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Search for User";
+            this.label4.Text = "Search for user";
             // 
             // tabPageUpdateDelete
             // 
@@ -259,7 +262,7 @@
             this.tabPageUpdateDelete.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageUpdateDelete.Size = new System.Drawing.Size(1057, 378);
             this.tabPageUpdateDelete.TabIndex = 2;
-            this.tabPageUpdateDelete.Text = "Update and Delete";
+            this.tabPageUpdateDelete.Text = "Update and delete";
             this.tabPageUpdateDelete.UseVisualStyleBackColor = true;
             this.tabPageUpdateDelete.Leave += new System.EventHandler(this.tabPageUpdateDelete_Leave);
             // 
@@ -332,40 +335,37 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
             this.label6.Location = new System.Drawing.Point(31, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(221, 22);
+            this.label6.Size = new System.Drawing.Size(219, 22);
             this.label6.TabIndex = 1;
-            this.label6.Text = "Update and Delete User";
+            this.label6.Text = "Update and delete user";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // tabControl1
+            // Column1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(299, 74);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(8, 8);
-            this.tabControl1.TabIndex = 6;
+            this.Column1.DataPropertyName = "employee_id ";
+            this.Column1.HeaderText = "Employee id ";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 310;
             // 
-            // tabPage1
+            // Column2
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 30);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(0, 0);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Column2.DataPropertyName = "username";
+            this.Column2.HeaderText = "Username";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 310;
             // 
-            // tabPage2
+            // Column3
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 30);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(0, 0);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.Column3.DataPropertyName = "password";
+            this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 310;
             // 
             // UserControlSetting
             // 
@@ -381,12 +381,12 @@
             this.tabControlUser.ResumeLayout(false);
             this.tabPageAddUser.ResumeLayout(false);
             this.tabPageAddUser.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.tabPageSearchUser.ResumeLayout(false);
             this.tabPageSearchUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPageUpdateDelete.ResumeLayout(false);
             this.tabPageUpdateDelete.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -406,9 +406,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxSearchUser;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.TabPage tabPageUpdateDelete;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button buttonDelete;
@@ -420,5 +417,8 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
