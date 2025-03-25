@@ -216,6 +216,12 @@
     <Compile Include="Form\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UserControlSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControlSetting.Designer.cs">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form\FormDashboardNew.resx">
       <DependentUpon>FormDashboardNew.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +237,9 @@
     </Compile>
     <EmbeddedResource Include="Form\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControlSetting.resx">
+      <DependentUpon>UserControlSetting.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -251,7 +260,6 @@
     <Folder Include="Icons\" />
     <Folder Include="Model\Entity\" />
     <Folder Include="Model\Repository\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Batik.png" />

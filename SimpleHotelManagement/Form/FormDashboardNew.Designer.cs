@@ -40,6 +40,7 @@
             this.HotelManagement = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelUsername = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,15 +50,16 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.userControlSetting1 = new SimpleHotelManagement.View.UserControlSetting();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -196,10 +198,23 @@
             // 
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(284, 595);
+            this.panel2.Location = new System.Drawing.Point(284, 629);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1082, 125);
+            this.panel2.Size = new System.Drawing.Size(1082, 91);
             this.panel2.TabIndex = 0;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::SimpleHotelManagement.Properties.Resources.Batik;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1082, 91);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -293,28 +308,29 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.userControlSetting1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(284, 205);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1082, 390);
+            this.panel6.Size = new System.Drawing.Size(1082, 424);
             this.panel6.TabIndex = 0;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
-            // pictureBox3
+            // userControlSetting1
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::SimpleHotelManagement.Properties.Resources.Batik;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1082, 125);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.userControlSetting1.BackColor = System.Drawing.Color.White;
+            this.userControlSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlSetting1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControlSetting1.Location = new System.Drawing.Point(0, 0);
+            this.userControlSetting1.Margin = new System.Windows.Forms.Padding(4);
+            this.userControlSetting1.Name = "userControlSetting1";
+            this.userControlSetting1.Size = new System.Drawing.Size(1082, 424);
+            this.userControlSetting1.TabIndex = 0;
+            this.userControlSetting1.Visible = false;
+            this.userControlSetting1.Load += new System.EventHandler(this.userControlSetting1_Load);
             // 
             // FormDashboardNew
             // 
@@ -339,12 +355,13 @@
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -372,5 +389,6 @@
         private System.Windows.Forms.FlowLayoutPanel PanelSlide;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private View.UserControlSetting userControlSetting1;
     }
 }

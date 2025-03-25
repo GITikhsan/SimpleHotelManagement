@@ -76,6 +76,9 @@ namespace SimpleHotelManagement
         private void buttonSettings_Click(object sender, EventArgs e)
         {
             MovedPanel(buttonSettings);
+            userControlSetting1.Clear();
+            userControlSetting1.Show();
+          
         }
         private void labelDateTime_Click(object sender, EventArgs e)
         {
@@ -97,5 +100,9 @@ namespace SimpleHotelManagement
 
         }
 
+        private void userControlSetting1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
