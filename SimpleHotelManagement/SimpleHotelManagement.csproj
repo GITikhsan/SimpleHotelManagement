@@ -222,6 +222,12 @@
     <Compile Include="View\UserControlGuest.Designer.cs">
       <DependentUpon>UserControlGuest.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UserControlReservation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControlReservation.Designer.cs">
+      <DependentUpon>UserControlReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserControlRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControlGuest.resx">
       <DependentUpon>UserControlGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControlReservation.resx">
+      <DependentUpon>UserControlReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControlRoom.resx">
       <DependentUpon>UserControlRoom.cs</DependentUpon>
