@@ -16,5 +16,10 @@ namespace SimpleHotelManagement.View
         {
             InitializeComponent();
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
