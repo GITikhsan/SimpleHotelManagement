@@ -24,7 +24,10 @@ namespace SimpleHotelManagement.View
 
         private void UserControlReservation_Load(object sender, EventArgs e)
         {
-
+            comboBoxType.SelectedIndex = 0;
+            textBoxRoomNo.Clear();
+            comboBoxType1.SelectedIndex = 0;
+            textBoxRoomNo1.Clear();
         }
         public void clear()
         {
@@ -53,6 +56,29 @@ namespace SimpleHotelManagement.View
             //pesanan_id = "";
 
 
+        }
+        private void UserControlRoom_Load(object sender, EventArgs e)
+        {
+            comboBoxType.SelectedIndex = 0;
+        }
+
+        private void tabPageAddReservation_Leave(object sender, EventArgs e)
+        {
+            clear();
+            clear1();
+        }
+        private void tabPageSearchReservation_Leave(object sender, EventArgs e)
+        {
+            textBoxSearch.Clear();
+        }
+        private void tabPageUpdateAndCancelReservation_Leave(object sender, EventArgs e)
+        {
+            clear1();
+        }
+
+        private void tabPageSearchRoom_Leave(object sender, EventArgs e)
+        {
+            textBoxSearchRoomNo.Clear();
         }
     }
 }
