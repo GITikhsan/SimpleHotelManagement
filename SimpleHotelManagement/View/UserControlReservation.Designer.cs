@@ -249,19 +249,19 @@
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(587, 122);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(136, 19);
+            this.label18.Size = new System.Drawing.Size(98, 19);
             this.label18.TabIndex = 32;
-            this.label18.Text = "//harga kamar:";
+            this.label18.Text = "Room rate:";
             // 
             // radioButtonNo
             // 
             this.radioButtonNo.AutoSize = true;
             this.radioButtonNo.Location = new System.Drawing.Point(781, 272);
             this.radioButtonNo.Name = "radioButtonNo";
-            this.radioButtonNo.Size = new System.Drawing.Size(67, 20);
+            this.radioButtonNo.Size = new System.Drawing.Size(46, 20);
             this.radioButtonNo.TabIndex = 31;
             this.radioButtonNo.TabStop = true;
-            this.radioButtonNo.Text = "TIDAK";
+            this.radioButtonNo.Text = "No";
             this.radioButtonNo.UseVisualStyleBackColor = true;
             // 
             // radioButtonYes
@@ -269,10 +269,10 @@
             this.radioButtonYes.AutoSize = true;
             this.radioButtonYes.Location = new System.Drawing.Point(715, 272);
             this.radioButtonYes.Name = "radioButtonYes";
-            this.radioButtonYes.Size = new System.Drawing.Size(46, 20);
+            this.radioButtonYes.Size = new System.Drawing.Size(52, 20);
             this.radioButtonYes.TabIndex = 30;
             this.radioButtonYes.TabStop = true;
-            this.radioButtonYes.Text = "YA";
+            this.radioButtonYes.Text = "Yes";
             this.radioButtonYes.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -367,12 +367,13 @@
             this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
             this.buttonAdd.Location = new System.Drawing.Point(169, 318);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(147, 40);
             this.buttonAdd.TabIndex = 19;
-            this.buttonAdd.Text = "Tambah";
+            this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             // 
             // labelAdd
@@ -567,10 +568,10 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(775, 266);
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(804, 265);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(128, 21);
+            this.label19.Size = new System.Drawing.Size(99, 17);
             this.label19.TabIndex = 45;
             this.label19.Text = "Reservation id";
             // 
@@ -724,7 +725,7 @@
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(110, 40);
             this.buttonUpdate.TabIndex = 31;
-            this.buttonUpdate.Text = "Perbarui";
+            this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
             // 
             // label12
