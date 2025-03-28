@@ -73,5 +73,9 @@ namespace SimpleHotelManagement.View
 
         }
 
+        private void tabPageAddRoom_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

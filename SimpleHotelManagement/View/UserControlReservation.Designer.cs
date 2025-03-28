@@ -98,15 +98,15 @@
             // tabControlReservation
             // 
             this.tabControlReservation.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tabControlReservation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tabControlReservation.Controls.Add(this.tabPageSearchRoom);
             this.tabControlReservation.Controls.Add(this.tabPageAddReservation);
             this.tabControlReservation.Controls.Add(this.tabPageSearchReservation);
             this.tabControlReservation.Controls.Add(this.tabPageUpdateAndCancelReservation);
-            this.tabControlReservation.Location = new System.Drawing.Point(37, 26);
+            this.tabControlReservation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlReservation.Location = new System.Drawing.Point(0, 0);
             this.tabControlReservation.Name = "tabControlReservation";
             this.tabControlReservation.SelectedIndex = 0;
-            this.tabControlReservation.Size = new System.Drawing.Size(1031, 417);
+            this.tabControlReservation.Size = new System.Drawing.Size(1102, 462);
             this.tabControlReservation.TabIndex = 1;
             // 
             // tabPageSearchRoom
@@ -118,7 +118,7 @@
             this.tabPageSearchRoom.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchRoom.Name = "tabPageSearchRoom";
             this.tabPageSearchRoom.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchRoom.Size = new System.Drawing.Size(1023, 388);
+            this.tabPageSearchRoom.Size = new System.Drawing.Size(1094, 433);
             this.tabPageSearchRoom.TabIndex = 3;
             this.tabPageSearchRoom.Text = "Find a room";
             this.tabPageSearchRoom.UseVisualStyleBackColor = true;
@@ -126,7 +126,7 @@
             // textBoxSearchRoomNo
             // 
             this.textBoxSearchRoomNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxSearchRoomNo.Location = new System.Drawing.Point(163, 61);
+            this.textBoxSearchRoomNo.Location = new System.Drawing.Point(199, 83);
             this.textBoxSearchRoomNo.Name = "textBoxSearchRoomNo";
             this.textBoxSearchRoomNo.Size = new System.Drawing.Size(294, 22);
             this.textBoxSearchRoomNo.TabIndex = 13;
@@ -136,7 +136,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(159, 39);
+            this.label17.Location = new System.Drawing.Point(195, 61);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(133, 19);
             this.label17.TabIndex = 12;
@@ -149,7 +149,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
-            this.label16.Location = new System.Drawing.Point(3, 6);
+            this.label16.Location = new System.Drawing.Point(39, 28);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(115, 22);
             this.label16.TabIndex = 11;
@@ -167,7 +167,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.Column9});
-            this.dataGridViewRoom.Location = new System.Drawing.Point(32, 113);
+            this.dataGridViewRoom.Location = new System.Drawing.Point(68, 135);
             this.dataGridViewRoom.Name = "dataGridViewRoom";
             this.dataGridViewRoom.ReadOnly = true;
             this.dataGridViewRoom.RowHeadersWidth = 51;
@@ -221,7 +221,7 @@
             this.tabPageAddReservation.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddReservation.Name = "tabPageAddReservation";
             this.tabPageAddReservation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddReservation.Size = new System.Drawing.Size(1023, 388);
+            this.tabPageAddReservation.Size = new System.Drawing.Size(1094, 433);
             this.tabPageAddReservation.TabIndex = 0;
             this.tabPageAddReservation.Text = "Add a reservation";
             this.tabPageAddReservation.UseVisualStyleBackColor = true;
@@ -229,7 +229,7 @@
             // textBoxClientID
             // 
             this.textBoxClientID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientID.Location = new System.Drawing.Point(171, 79);
+            this.textBoxClientID.Location = new System.Drawing.Point(207, 101);
             this.textBoxClientID.Name = "textBoxClientID";
             this.textBoxClientID.Size = new System.Drawing.Size(294, 22);
             this.textBoxClientID.TabIndex = 34;
@@ -237,7 +237,7 @@
             // textBoxPrice2
             // 
             this.textBoxPrice2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxPrice2.Location = new System.Drawing.Point(591, 153);
+            this.textBoxPrice2.Location = new System.Drawing.Point(627, 175);
             this.textBoxPrice2.Name = "textBoxPrice2";
             this.textBoxPrice2.Size = new System.Drawing.Size(294, 22);
             this.textBoxPrice2.TabIndex = 33;
@@ -247,7 +247,7 @@
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(587, 122);
+            this.label18.Location = new System.Drawing.Point(623, 144);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(98, 19);
             this.label18.TabIndex = 32;
@@ -255,8 +255,9 @@
             // 
             // radioButtonNo
             // 
+            this.radioButtonNo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButtonNo.AutoSize = true;
-            this.radioButtonNo.Location = new System.Drawing.Point(781, 272);
+            this.radioButtonNo.Location = new System.Drawing.Point(785, 293);
             this.radioButtonNo.Name = "radioButtonNo";
             this.radioButtonNo.Size = new System.Drawing.Size(46, 20);
             this.radioButtonNo.TabIndex = 31;
@@ -266,8 +267,9 @@
             // 
             // radioButtonYes
             // 
+            this.radioButtonYes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButtonYes.AutoSize = true;
-            this.radioButtonYes.Location = new System.Drawing.Point(715, 272);
+            this.radioButtonYes.Location = new System.Drawing.Point(719, 293);
             this.radioButtonYes.Name = "radioButtonYes";
             this.radioButtonYes.Size = new System.Drawing.Size(52, 20);
             this.radioButtonYes.TabIndex = 30;
@@ -278,9 +280,8 @@
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(587, 273);
+            this.label3.Location = new System.Drawing.Point(623, 295);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 19);
             this.label3.TabIndex = 29;
@@ -289,7 +290,7 @@
             // textBoxRoomNo
             // 
             this.textBoxRoomNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxRoomNo.Location = new System.Drawing.Point(591, 227);
+            this.textBoxRoomNo.Location = new System.Drawing.Point(627, 249);
             this.textBoxRoomNo.Name = "textBoxRoomNo";
             this.textBoxRoomNo.Size = new System.Drawing.Size(294, 22);
             this.textBoxRoomNo.TabIndex = 28;
@@ -299,7 +300,7 @@
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(167, 236);
+            this.label6.Location = new System.Drawing.Point(203, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 19);
             this.label6.TabIndex = 27;
@@ -308,7 +309,7 @@
             // dateTimePickerOut
             // 
             this.dateTimePickerOut.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerOut.Location = new System.Drawing.Point(171, 269);
+            this.dateTimePickerOut.Location = new System.Drawing.Point(207, 291);
             this.dateTimePickerOut.Name = "dateTimePickerOut";
             this.dateTimePickerOut.Size = new System.Drawing.Size(264, 22);
             this.dateTimePickerOut.TabIndex = 26;
@@ -318,7 +319,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(167, 142);
+            this.label5.Location = new System.Drawing.Point(203, 164);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 19);
             this.label5.TabIndex = 25;
@@ -327,7 +328,7 @@
             // dateTimePickerIn
             // 
             this.dateTimePickerIn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerIn.Location = new System.Drawing.Point(169, 178);
+            this.dateTimePickerIn.Location = new System.Drawing.Point(205, 200);
             this.dateTimePickerIn.Name = "dateTimePickerIn";
             this.dateTimePickerIn.Size = new System.Drawing.Size(264, 22);
             this.dateTimePickerIn.TabIndex = 24;
@@ -344,7 +345,7 @@
             "Double",
             "Family",
             "Suite"});
-            this.comboBoxType.Location = new System.Drawing.Point(591, 79);
+            this.comboBoxType.Location = new System.Drawing.Point(627, 101);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(294, 24);
             this.comboBoxType.TabIndex = 22;
@@ -354,7 +355,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(167, 43);
+            this.label4.Location = new System.Drawing.Point(203, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 19);
             this.label4.TabIndex = 20;
@@ -369,7 +370,7 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.White;
-            this.buttonAdd.Location = new System.Drawing.Point(169, 318);
+            this.buttonAdd.Location = new System.Drawing.Point(205, 340);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(147, 40);
             this.buttonAdd.TabIndex = 19;
@@ -381,7 +382,7 @@
             this.labelAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelAdd.AutoSize = true;
             this.labelAdd.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdd.Location = new System.Drawing.Point(587, 195);
+            this.labelAdd.Location = new System.Drawing.Point(623, 217);
             this.labelAdd.Name = "labelAdd";
             this.labelAdd.Size = new System.Drawing.Size(130, 19);
             this.labelAdd.TabIndex = 17;
@@ -392,7 +393,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(587, 43);
+            this.label2.Location = new System.Drawing.Point(623, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 19);
             this.label2.TabIndex = 15;
@@ -404,7 +405,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
-            this.label1.Location = new System.Drawing.Point(6, 6);
+            this.label1.Location = new System.Drawing.Point(42, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 22);
             this.label1.TabIndex = 14;
@@ -419,7 +420,7 @@
             this.tabPageSearchReservation.Location = new System.Drawing.Point(4, 4);
             this.tabPageSearchReservation.Name = "tabPageSearchReservation";
             this.tabPageSearchReservation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSearchReservation.Size = new System.Drawing.Size(1023, 388);
+            this.tabPageSearchReservation.Size = new System.Drawing.Size(1094, 433);
             this.tabPageSearchReservation.TabIndex = 1;
             this.tabPageSearchReservation.Text = "Find a reservation";
             this.tabPageSearchReservation.UseVisualStyleBackColor = true;
@@ -427,7 +428,7 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxSearch.Location = new System.Drawing.Point(173, 84);
+            this.textBoxSearch.Location = new System.Drawing.Point(209, 106);
             this.textBoxSearch.Name = "textBoxSearch";
             this.textBoxSearch.Size = new System.Drawing.Size(294, 22);
             this.textBoxSearch.TabIndex = 14;
@@ -448,7 +449,7 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridViewReservation.Location = new System.Drawing.Point(24, 131);
+            this.dataGridViewReservation.Location = new System.Drawing.Point(60, 153);
             this.dataGridViewReservation.Name = "dataGridViewReservation";
             this.dataGridViewReservation.ReadOnly = true;
             this.dataGridViewReservation.RowHeadersWidth = 51;
@@ -517,7 +518,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(169, 62);
+            this.label7.Location = new System.Drawing.Point(205, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 19);
             this.label7.TabIndex = 11;
@@ -530,7 +531,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
-            this.label8.Location = new System.Drawing.Point(6, 6);
+            this.label8.Location = new System.Drawing.Point(42, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(166, 22);
             this.label8.TabIndex = 10;
@@ -559,7 +560,7 @@
             this.tabPageUpdateAndCancelReservation.Location = new System.Drawing.Point(4, 4);
             this.tabPageUpdateAndCancelReservation.Name = "tabPageUpdateAndCancelReservation";
             this.tabPageUpdateAndCancelReservation.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageUpdateAndCancelReservation.Size = new System.Drawing.Size(1023, 388);
+            this.tabPageUpdateAndCancelReservation.Size = new System.Drawing.Size(1094, 433);
             this.tabPageUpdateAndCancelReservation.TabIndex = 2;
             this.tabPageUpdateAndCancelReservation.Text = "Update and cancel";
             this.tabPageUpdateAndCancelReservation.UseVisualStyleBackColor = true;
@@ -569,7 +570,7 @@
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(804, 265);
+            this.label19.Location = new System.Drawing.Point(840, 287);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 17);
             this.label19.TabIndex = 45;
@@ -578,15 +579,16 @@
             // textBoxPesananID
             // 
             this.textBoxPesananID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxPesananID.Location = new System.Drawing.Point(609, 265);
+            this.textBoxPesananID.Location = new System.Drawing.Point(645, 287);
             this.textBoxPesananID.Name = "textBoxPesananID";
             this.textBoxPesananID.Size = new System.Drawing.Size(294, 22);
             this.textBoxPesananID.TabIndex = 46;
             // 
             // radioButtonNo1
             // 
+            this.radioButtonNo1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButtonNo1.AutoSize = true;
-            this.radioButtonNo1.Location = new System.Drawing.Point(812, 209);
+            this.radioButtonNo1.Location = new System.Drawing.Point(812, 231);
             this.radioButtonNo1.Name = "radioButtonNo1";
             this.radioButtonNo1.Size = new System.Drawing.Size(46, 20);
             this.radioButtonNo1.TabIndex = 44;
@@ -596,8 +598,9 @@
             // 
             // radioButtonYes1
             // 
+            this.radioButtonYes1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.radioButtonYes1.AutoSize = true;
-            this.radioButtonYes1.Location = new System.Drawing.Point(746, 209);
+            this.radioButtonYes1.Location = new System.Drawing.Point(746, 231);
             this.radioButtonYes1.Name = "radioButtonYes1";
             this.radioButtonYes1.Size = new System.Drawing.Size(52, 20);
             this.radioButtonYes1.TabIndex = 43;
@@ -608,9 +611,8 @@
             // label15
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(605, 210);
+            this.label15.Location = new System.Drawing.Point(641, 232);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 19);
             this.label15.TabIndex = 42;
@@ -619,7 +621,7 @@
             // textBoxRoomNo1
             // 
             this.textBoxRoomNo1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxRoomNo1.Location = new System.Drawing.Point(609, 158);
+            this.textBoxRoomNo1.Location = new System.Drawing.Point(645, 180);
             this.textBoxRoomNo1.Name = "textBoxRoomNo1";
             this.textBoxRoomNo1.Size = new System.Drawing.Size(294, 22);
             this.textBoxRoomNo1.TabIndex = 41;
@@ -631,8 +633,9 @@
             this.buttonCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCancel.FlatAppearance.BorderSize = 0;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(309, 318);
+            this.buttonCancel.Location = new System.Drawing.Point(345, 340);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(110, 40);
             this.buttonCancel.TabIndex = 40;
@@ -644,7 +647,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(165, 196);
+            this.label9.Location = new System.Drawing.Point(201, 218);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(42, 19);
             this.label9.TabIndex = 39;
@@ -653,7 +656,7 @@
             // dateTimePickerOut1
             // 
             this.dateTimePickerOut1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerOut1.Location = new System.Drawing.Point(169, 237);
+            this.dateTimePickerOut1.Location = new System.Drawing.Point(205, 259);
             this.dateTimePickerOut1.Name = "dateTimePickerOut1";
             this.dateTimePickerOut1.Size = new System.Drawing.Size(264, 22);
             this.dateTimePickerOut1.TabIndex = 38;
@@ -663,7 +666,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(165, 117);
+            this.label10.Location = new System.Drawing.Point(201, 139);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 19);
             this.label10.TabIndex = 37;
@@ -672,7 +675,7 @@
             // dateTimePickerIn1
             // 
             this.dateTimePickerIn1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerIn1.Location = new System.Drawing.Point(169, 158);
+            this.dateTimePickerIn1.Location = new System.Drawing.Point(205, 180);
             this.dateTimePickerIn1.Name = "dateTimePickerIn1";
             this.dateTimePickerIn1.Size = new System.Drawing.Size(264, 22);
             this.dateTimePickerIn1.TabIndex = 36;
@@ -689,7 +692,7 @@
             "Double",
             "Family",
             "Suite"});
-            this.comboBoxType1.Location = new System.Drawing.Point(609, 80);
+            this.comboBoxType1.Location = new System.Drawing.Point(645, 102);
             this.comboBoxType1.Name = "comboBoxType1";
             this.comboBoxType1.Size = new System.Drawing.Size(294, 24);
             this.comboBoxType1.TabIndex = 34;
@@ -697,7 +700,7 @@
             // textBoxClientID1
             // 
             this.textBoxClientID1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxClientID1.Location = new System.Drawing.Point(169, 80);
+            this.textBoxClientID1.Location = new System.Drawing.Point(205, 102);
             this.textBoxClientID1.Name = "textBoxClientID1";
             this.textBoxClientID1.Size = new System.Drawing.Size(294, 22);
             this.textBoxClientID1.TabIndex = 33;
@@ -707,7 +710,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(165, 49);
+            this.label11.Location = new System.Drawing.Point(201, 71);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(151, 19);
             this.label11.TabIndex = 32;
@@ -720,8 +723,9 @@
             this.buttonUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonUpdate.FlatAppearance.BorderSize = 0;
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUpdate.ForeColor = System.Drawing.Color.White;
-            this.buttonUpdate.Location = new System.Drawing.Point(169, 318);
+            this.buttonUpdate.Location = new System.Drawing.Point(205, 340);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(110, 40);
             this.buttonUpdate.TabIndex = 31;
@@ -733,7 +737,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(605, 117);
+            this.label12.Location = new System.Drawing.Point(641, 139);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 19);
             this.label12.TabIndex = 30;
@@ -745,7 +749,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(605, 49);
+            this.label13.Location = new System.Drawing.Point(641, 71);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(103, 19);
             this.label13.TabIndex = 29;
@@ -757,7 +761,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(94)))), ((int)(((byte)(115)))));
-            this.label14.Location = new System.Drawing.Point(6, 6);
+            this.label14.Location = new System.Drawing.Point(42, 28);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(286, 22);
             this.label14.TabIndex = 28;
@@ -770,6 +774,7 @@
             this.Controls.Add(this.tabControlReservation);
             this.Name = "UserControlReservation";
             this.Size = new System.Drawing.Size(1102, 462);
+            this.Load += new System.EventHandler(this.UserControlReservation_Load);
             this.tabControlReservation.ResumeLayout(false);
             this.tabPageSearchRoom.ResumeLayout(false);
             this.tabPageSearchRoom.PerformLayout();

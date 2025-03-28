@@ -49,10 +49,11 @@
             this.linkLabelLogOut = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.userControlRoom1 = new SimpleHotelManagement.View.UserControlRoom();
             this.userControlGuest1 = new SimpleHotelManagement.View.UserControlGuest();
             this.userControlSetting1 = new SimpleHotelManagement.View.UserControlSetting();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.userControlReservation1 = new SimpleHotelManagement.View.UserControlReservation();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -310,6 +311,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.userControlReservation1);
             this.panel6.Controls.Add(this.userControlRoom1);
             this.panel6.Controls.Add(this.userControlGuest1);
             this.panel6.Controls.Add(this.userControlSetting1);
@@ -318,6 +320,10 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1082, 424);
             this.panel6.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // userControlRoom1
             // 
@@ -354,9 +360,15 @@
             this.userControlSetting1.Visible = false;
             this.userControlSetting1.Load += new System.EventHandler(this.userControlSetting1_Load);
             // 
-            // timer1
+            // userControlReservation1
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            this.userControlReservation1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userControlReservation1.Location = new System.Drawing.Point(0, 0);
+            this.userControlReservation1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlReservation1.Name = "userControlReservation1";
+            this.userControlReservation1.Size = new System.Drawing.Size(1082, 424);
+            this.userControlReservation1.TabIndex = 1;
+            this.userControlReservation1.Visible = false;
             // 
             // FormDashboardNew
             // 
@@ -418,5 +430,6 @@
         private View.UserControlSetting userControlSetting1;
         private View.UserControlGuest userControlGuest1;
         private View.UserControlRoom userControlRoom1;
+        private View.UserControlReservation userControlReservation1;
     }
 }

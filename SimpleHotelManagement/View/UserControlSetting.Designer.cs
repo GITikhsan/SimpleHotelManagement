@@ -41,6 +41,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageSearchUser = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxSearchUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,9 +55,6 @@
             this.textBoxDeleteUser = new System.Windows.Forms.TextBox();
             this.textBoxUpdateUser = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlUser.SuspendLayout();
             this.tabPageAddUser.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -66,14 +66,14 @@
             // tabControlUser
             // 
             this.tabControlUser.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tabControlUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tabControlUser.Controls.Add(this.tabPageAddUser);
             this.tabControlUser.Controls.Add(this.tabPageSearchUser);
             this.tabControlUser.Controls.Add(this.tabPageUpdateDelete);
-            this.tabControlUser.Location = new System.Drawing.Point(22, 26);
+            this.tabControlUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlUser.Location = new System.Drawing.Point(0, 0);
             this.tabControlUser.Name = "tabControlUser";
             this.tabControlUser.SelectedIndex = 0;
-            this.tabControlUser.Size = new System.Drawing.Size(1065, 412);
+            this.tabControlUser.Size = new System.Drawing.Size(1102, 462);
             this.tabControlUser.TabIndex = 0;
             // 
             // tabPageAddUser
@@ -88,7 +88,7 @@
             this.tabPageAddUser.Location = new System.Drawing.Point(4, 4);
             this.tabPageAddUser.Name = "tabPageAddUser";
             this.tabPageAddUser.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAddUser.Size = new System.Drawing.Size(1057, 378);
+            this.tabPageAddUser.Size = new System.Drawing.Size(1094, 428);
             this.tabPageAddUser.TabIndex = 0;
             this.tabPageAddUser.Text = "Add a user";
             this.tabPageAddUser.UseVisualStyleBackColor = true;
@@ -219,6 +219,33 @@
             this.dataGridView1.Size = new System.Drawing.Size(984, 236);
             this.dataGridView1.TabIndex = 7;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "employee_id ";
+            this.Column1.HeaderText = "Employee id ";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 310;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "username";
+            this.Column2.HeaderText = "Username";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 310;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "password";
+            this.Column3.HeaderText = "Password";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 310;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -339,33 +366,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Update and delete user";
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "employee_id ";
-            this.Column1.HeaderText = "Employee id ";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 310;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "username";
-            this.Column2.HeaderText = "Username";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 310;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "password";
-            this.Column3.HeaderText = "Password";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 310;
             // 
             // UserControlSetting
             // 
