@@ -374,13 +374,13 @@
             // 
             // userControlDashboard1
             // 
+            this.userControlDashboard1.AutoSize = true;
             this.userControlDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.userControlDashboard1.Location = new System.Drawing.Point(0, 0);
-            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.userControlDashboard1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.userControlDashboard1.Name = "userControlDashboard1";
             this.userControlDashboard1.Size = new System.Drawing.Size(1082, 424);
-            this.userControlDashboard1.TabIndex = 1;
-            this.userControlDashboard1.Visible = false;
+            this.userControlDashboard1.TabIndex = 0;
             // 
             // FormDashboardNew
             // 
@@ -412,6 +412,7 @@
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
 
         }

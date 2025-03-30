@@ -61,6 +61,9 @@ namespace SimpleHotelManagement
             userControlGuest1.Hide();
             userControlRoom1.Hide();
             userControlReservation1.Hide();
+            userControlDashboard1.User();
+            userControlDashboard1.Client();
+            userControlDashboard1.Room();
             userControlDashboard1.Show();
 
 
