@@ -247,6 +247,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\GuestController.cs" />
+    <Compile Include="Controller\RoomController.cs" />
+    <Compile Include="Controller\SettingController.cs" />
     <Compile Include="Form View\FormDashboardNew.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -344,7 +347,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controller\" />
     <Folder Include="Icons\" />
   </ItemGroup>
   <ItemGroup>
