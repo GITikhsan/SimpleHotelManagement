@@ -254,6 +254,12 @@
       <DependentUpon>FormDashboardNew.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Context\DbContext.cs" />
+    <Compile Include="Model\Entity\Guest.cs" />
+    <Compile Include="Model\Entity\Room.cs" />
+    <Compile Include="Model\Entity\Setting.cs" />
+    <Compile Include="Model\Repository\GuestRepository.cs" />
+    <Compile Include="Model\Repository\RoomRepository.cs" />
+    <Compile Include="Model\Repository\SettingRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Form View\FormLogin.cs">
@@ -340,8 +346,6 @@
   <ItemGroup>
     <Folder Include="Controller\" />
     <Folder Include="Icons\" />
-    <Folder Include="Model\Entity\" />
-    <Folder Include="Model\Repository\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\Batik.png" />
