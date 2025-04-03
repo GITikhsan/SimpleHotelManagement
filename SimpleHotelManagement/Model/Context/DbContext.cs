@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace ProgramHotel.Context
+namespace SimpleHotelManagement.Context
 {
     public class DbContext : IDisposable
     {

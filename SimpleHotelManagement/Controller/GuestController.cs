@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-using ProgramHotel.Model;
-using ProgramHotel.Model.Entity;
-using ProgramHotel.Model.Repository;
+using SimpleHotelManagement.Model;
+using SimpleHotelManagement.Model.Entity;
+using SimpleHotelManagement.Model.Repository;
 
 namespace SimpleHotelManagement.Controller
 {
     public class GuestController
     {
+        private GuestRepository _repository;
         public GuestController()
         {
             _repository = new GuestRepository();

@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
-using ProgramHotel.Context;
-using ProgramHotel.Model.Entity;
+using SimpleHotelManagement.Context;
+using SimpleHotelManagement.Model.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
