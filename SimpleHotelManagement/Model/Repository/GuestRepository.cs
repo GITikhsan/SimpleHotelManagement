@@ -14,7 +14,7 @@ namespace SimpleHotelManagement.Model.Repository
     {
         public List<Guest> GetAll()
         {
-            List<Guest> tamuList = new List<Guest>();
+            List<Guest> guestList = new List<Guest>();
 
             using (DbContext context = new DbContext())
             {
@@ -24,20 +24,54 @@ namespace SimpleHotelManagement.Model.Repository
                 {
                     while (reader.Read())
                     {
-                        tamuList.Add(new Guest
+                        guestList.Add(new Guest
                         {
-                            /*tamu_id = Convert.ToInt32(reader["tamu_id"]),
-                            namaDepan = reader["namaDepan"].ToString(),
-                            namaBelakang = reader["namaBelakang"].ToString(),
-                            nomorTelepon = reader["nomorTelepon"].ToString(),
-                            alamat = reader["alamat"].ToString(),
-                            nomor_KTP = reader["nomor_KTP"].ToString()*/
+                            guest_id = Convert.ToInt32(reader["guest_id"]),
+                            first_name = reader["first_name"].ToString(),
+                            last_name = reader["last_name "].ToString(),
+                            phone_number = reader["phone_number"].ToString(),
+                            address = reader["address"].ToString(),
+                            ID_card_number = reader["ID_card_number"].ToString()
                         });
+                    }
+                         
+                }
+            }
+
+            return guestList;
+        }
+        public List<Guest> SearchByphone_number(string phone_number)
+        {
+            List<Guest> guestList = new List<Guest>();
+
+            using (DbContext context = new DbContext())
+            {
+                string query = "SELECT * FROM guests WHERE phone_number LIKE @phone_number";
+                using (MySqlCommand cmd = new MySqlCommand(query, context.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@phone_number", "%" + phone_number + "%");
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            guestList.Add(new Guest
+                            {
+                                guest_id = Convert.ToInt32(reader["guest_id"]),
+                                first_name = reader["first_name"].ToString(),
+                                last_name = reader["last_name"].ToString(),
+                                phone_number = reader["phone_number"].ToString(),
+                                address = reader["address"].ToString(),
+                                ID_card_number = reader["ID_card_number"].ToString()
+
+
+
+                            });
+                        }
                     }
                 }
             }
 
-            return tamuList;
+            return guestList;
         }
     }
 }

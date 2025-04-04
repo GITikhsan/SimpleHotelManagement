@@ -23,5 +23,10 @@ namespace SimpleHotelManagement.Controller
         {
             return _repository.GetAll();
         }
+        public List<Guest> SearchByphone_number(string phone_number)
+        {
+            GuestRepository repository = new GuestRepository();
+            return repository.SearchByphone_number(phone_number);
+        }
     }
 }
