@@ -28,5 +28,15 @@ namespace SimpleHotelManagement.Controller
             GuestRepository repository = new GuestRepository();
             return repository.SearchByphone_number(phone_number);
         }
+        public void AddGuest(Guest guest)
+        {
+            if (string.IsNullOrEmpty(guest.first_name) || string.IsNullOrEmpty(guest.last_name) || string.IsNullOrEmpty(guest.phone_number) || string.IsNullOrEmpty(guest.phone_number) || string.IsNullOrEmpty(guest.address) || string.IsNullOrEmpty(guest.ID_card_number))
+            {
+                throw new ArgumentException("Data cannot be empty!");
+            }
+
+
+            _repository.Create(guest);
+        }
     }
 }

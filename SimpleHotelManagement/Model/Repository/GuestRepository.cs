@@ -73,5 +73,26 @@ namespace SimpleHotelManagement.Model.Repository
 
             return guestList;
         }
+        public int Create(Guest guest)
+        {
+            int result = 0;
+
+            using (DbContext context = new DbContext())
+            {
+                string query = "INSERT INTO guest (first_name, last_name, phone_number, address, ID_card_number) " + "VALUES (@first_name, @last_name, @phone_number, @address, @ID_card_number)";
+                using (MySqlCommand cmd = new MySqlCommand(query, context.Connection))
+                {
+                    cmd.Parameters.AddWithValue("@first_name", guest.first_name);
+                    cmd.Parameters.AddWithValue("@last_name", guest.last_name);
+                    cmd.Parameters.AddWithValue("@phone_number", guest.phone_number);
+                    cmd.Parameters.AddWithValue("@address", guest.address);
+                    cmd.Parameters.AddWithValue("@ID_card_number", guest.ID_card_number);
+
+                    result = cmd.ExecuteNonQuery();
+                }
+            }
+
+            return result;
+        }
     }
 }
